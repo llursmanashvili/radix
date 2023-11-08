@@ -1,0 +1,8 @@
+.abouthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutbody{
+    margin-top: 200px;
+}
