@@ -103,9 +103,7 @@ function Navbar() {
                       }}
                       link
                     >
-                      <Link to="http://radix.ge/honorary-members/ ">
-                        საპატიო წევრები
-                      </Link>
+                      <Link to="http://radix.ge/government/">სტრუქტურა</Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem
                       style={{
@@ -114,8 +112,11 @@ function Navbar() {
                       }}
                       link
                     >
-                      <Link to="http://radix.ge/government/">სტრუქტურა</Link>
+                      <Link to="http://radix.ge/honorary-members/ ">
+                        საპატიო წევრები
+                      </Link>
                     </MDBDropdownItem>
+
                     <MDBDropdownItem
                       style={{
                         color: "white",
@@ -186,7 +187,7 @@ function Navbaren() {
       <MDBNavbar
         style={{
           position: "fixed",
-
+          zIndex: "1",
           width: "100%",
           backgroundColor: navColor,
           transition: "all 1s",
@@ -244,9 +245,7 @@ function Navbaren() {
                       }}
                       link
                     >
-                      <Link to="http://radix.ge/honorary-members/ ">
-                        Honorary Members
-                      </Link>
+                      <Link to="/structure">Structure</Link>
                     </MDBDropdownItem>
                     <MDBDropdownItem
                       style={{
@@ -255,8 +254,11 @@ function Navbaren() {
                       }}
                       link
                     >
-                      <Link to="http://radix.ge/government/">Structure</Link>
+                      <Link to="http://radix.ge/honorary-members/ ">
+                        Honorary Members
+                      </Link>
                     </MDBDropdownItem>
+
                     <MDBDropdownItem
                       style={{
                         color: "white",

@@ -4,6 +4,7 @@ import "./App.css";
 import { About, Abouten } from "./aboutus/about";
 import Footer from "./footer";
 import { Routes, Route } from "react-router-dom";
+import Structure from "./structure/structure";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
         <Route
           path="/aboutusen"
           element={[<Navbaren />, <Abouten />, <Footer />]}
+        />
+        <Route
+          path="/structure"
+          element={[<Navbaren />, <Structure />, <Footer />]}
         />
 
         <Route path="/en" element={[<Navbaren />]} />
