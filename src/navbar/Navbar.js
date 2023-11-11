@@ -18,7 +18,6 @@ import {
 } from "mdb-react-ui-kit";
 import logo from "./logo.png";
 import About from "../aboutus/about";
-import "./navbar.css";
 import { FlatTree } from "framer-motion";
 
 function Navbar() {
@@ -45,7 +44,7 @@ function Navbar() {
       <MDBNavbar
         style={{
           position: "fixed",
-
+          zIndex: "1",
           width: "100%",
           backgroundColor: navColor,
           transition: "all 1s",
@@ -54,14 +53,17 @@ function Navbar() {
         light
       >
         <MDBContainer fluid>
-          <MDBNavbarBrand href="#">
-            <img
-              style={{
-                borderRadius: "10px",
-                width: "100px",
-              }}
-              src={logo}
-            />
+          <MDBNavbarBrand>
+            {" "}
+            <Link to="/">
+              <img
+                style={{
+                  borderRadius: "10px",
+                  width: "100px",
+                }}
+                src={logo}
+              />
+            </Link>
           </MDBNavbarBrand>
 
           <MDBNavbarToggler
@@ -96,15 +98,17 @@ function Navbar() {
                   </MDBDropdownToggle>
 
                   <MDBDropdownMenu>
-                    <MDBDropdownItem
-                      style={{
-                        color: "white",
-                        fontSize: "125%",
-                      }}
-                      link
-                    >
-                      <Link to="http://radix.ge/government/">სტრუქტურა</Link>
-                    </MDBDropdownItem>
+                    <Link to="/structure">
+                      <MDBDropdownItem
+                        style={{
+                          color: "white",
+                          fontSize: "125%",
+                        }}
+                        link
+                      >
+                        სტრუქტურა
+                      </MDBDropdownItem>
+                    </Link>
                     <MDBDropdownItem
                       style={{
                         color: "white",
@@ -140,7 +144,7 @@ function Navbar() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="http://radix.ge/contact/"
+                    to="/contact"
                   >
                     კონტაქტი
                   </Link>
@@ -196,14 +200,16 @@ function Navbaren() {
         light
       >
         <MDBContainer fluid>
-          <MDBNavbarBrand href="#">
-            <img
-              style={{
-                borderRadius: "10px",
-                width: "100px",
-              }}
-              src={logo}
-            />
+          <MDBNavbarBrand>
+            <Link to="/en">
+              <img
+                style={{
+                  borderRadius: "10px",
+                  width: "100px",
+                }}
+                src={logo}
+              />{" "}
+            </Link>
           </MDBNavbarBrand>
 
           <MDBNavbarToggler
@@ -238,15 +244,17 @@ function Navbaren() {
                   </MDBDropdownToggle>
 
                   <MDBDropdownMenu style={{ inset: "30% auto auto 25%" }}>
-                    <MDBDropdownItem
-                      style={{
-                        color: "white",
-                        fontSize: "125%",
-                      }}
-                      link
-                    >
-                      <Link to="/structure">Structure</Link>
-                    </MDBDropdownItem>
+                    <Link to="/structureen">
+                      <MDBDropdownItem
+                        style={{
+                          color: "white",
+                          fontSize: "125%",
+                        }}
+                        link
+                      >
+                        Structure
+                      </MDBDropdownItem>
+                    </Link>
                     <MDBDropdownItem
                       style={{
                         color: "white",
@@ -282,7 +290,7 @@ function Navbaren() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="http://radix.ge/contact/"
+                    to="/contacten"
                   >
                     Contact
                   </Link>

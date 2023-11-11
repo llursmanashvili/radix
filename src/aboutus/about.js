@@ -1,8 +1,18 @@
 import "./about.css";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="abouthead">
-      <div className="aboutbody">
+      <div className="aboutbody" data-aos="zoom-in">
         <h1 style={{ marginBottom: "20px", fontWeight: "600" }}>მიზნები</h1>
         <h3 style={{ textAlign: "left", margin: "50px" }}>
           სამეცნიერო-კვლევით ცენტრ RADIX-ის მიზანია საზოგადოების
@@ -83,9 +93,15 @@ function About() {
   );
 }
 function Abouten() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="abouthead">
-      <div className="aboutbody">
+      <div className="aboutbody" data-aos="zoom-in">
         <h1 style={{ marginBottom: "20px", fontWeight: "600" }}>Who We Are</h1>
         <h3 style={{ textAlign: "left", margin: "50px" }}>
           The goal of Radix is improvement of the level of knowledge in society
