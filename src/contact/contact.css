@@ -1,18 +1,22 @@
 .email{
     display: flex;
+    padding-top: 7%;
 
   padding-bottom: 12%;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
     text-align: center;
 }
+.h3{
+    font-family: sans-serif;
 
+}
 
 .contact1{
     
     margin-top: 11%;
     
-    margin-left: 5%;
+    margin-left: 15%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -27,7 +31,7 @@
     align-items: center;
     margin-top: 12%;
 
-    margin-left: 25%;
+    margin-left: 15%;
 }
 
 

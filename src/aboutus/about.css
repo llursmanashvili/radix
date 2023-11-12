@@ -4,5 +4,8 @@
     justify-content: center;
 }
 .aboutbody{
-    margin-top: 200px;
+    margin-top: 150px;
+}
+.h3{
+    font: "Lucida Console", "Courier New", monospace;
 }

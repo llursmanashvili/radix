@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState, useMemo } from "react";
 import emailjs from "@emailjs/browser";
+import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import "./contact.css";
 import "react-native";
 import call from "react-native-phone-call/index";
@@ -12,19 +13,41 @@ import {
   MDBValidation,
   MDBValidationItem,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 // npm i @emailjs/browser
+const libraries = ["places"];
+const mapContainerStyle = {
+  width: "45vh",
+  height: "30vh",
+};
+const center = {
+  lat: 7.2905715, // default latitude
+  lng: 80.6337262, // default longitude
+};
 
 const Contact = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
   const form = useRef();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: "AIzaSyC1ICqmw5FPn_8bKJCzqduZrnTwZSGlCPE",
+    libraries,
+  });
+
+  if (loadError) {
+    return <div>Error loading maps</div>;
+  }
+
+  if (!isLoaded) {
+    return <div>Loading maps</div>;
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -65,103 +88,45 @@ const Contact = () => {
     call(args).catch(console.error);
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <>
-      <div className="email" data-aos="zoom-out">
+      <div className="email">
         <div className="contact1">
-          <p className="p" style={{ fontWeight: "bold", letterSpacing: "2px" }}>
+          <p className="p" style={{ letterSpacing: "2px" }}>
             დაგვიკავშირდით
           </p>
           <button className="icon" onClick={triggercall}>
-            <MDBIcon className="me-2" fas icon="phone-alt" />
+            <MDBIcon className="me-2" fas icon="mobile" />
             +995514000016
           </button>
           <button className="icon" onClick={triggercall1}>
-            <MDBIcon className="me-2" fas icon="phone-alt" />
+            <MDBIcon className="me-2" fas icon="mobile" />
             +995555777895
           </button>
           <p
             className="p"
             style={{
               marginTop: "20%",
-              fontWeight: "bold",
               letterSpacing: "2px",
             }}
           >
             მოგვწერეთ{" "}
           </p>
-          <button className="icon" onClick={triggercall}>
-            <MDBIcon
-              className="me-2"
-              to="mailto:radix.ge@gmail.com"
-              fas
-              icon="fas fa-envelope"
-            />
-            radix.ge@gmail.com
+          <button className="icon">
+            <Link to="mailto:radix.ge@gmail.com">
+              <MDBIcon className="me-2" fas icon="fas fa-envelope" />
+              radix.ge@gmail.com
+            </Link>
           </button>
         </div>
         <div className="contact2">
-          {" "}
-          <MDBValidation
-            ref={form}
-            onSubmit={sendEmail}
-            noValidate
-            id="form"
-            className="text-center"
-            style={{ width: "100%", maxWidth: "300px" }}
+          <GoogleMap
+            mapContainerStyle={mapContainerStyle}
+            zoom={15}
+            center={center}
           >
-            <MDBValidationItem invalid feedback="Please provide your name.">
-              <MDBInput
-                label="Name"
-                v-model="name"
-                wrapperClass="mb-4"
-                required
-              />
-            </MDBValidationItem>
-
-            <MDBValidationItem invalid feedback="Please provide your email.">
-              <MDBInput
-                type="email"
-                label="Email address"
-                v-model="email"
-                wrapperClass="mb-4"
-                required
-              />
-            </MDBValidationItem>
-
-            <MDBValidationItem invalid feedback="Please provide mail subject.">
-              <MDBInput
-                label="Subject"
-                v-model="subject"
-                wrapperClass="mb-4"
-                required
-              />
-            </MDBValidationItem>
-
-            <MDBValidationItem
-              invalid
-              feedback="Please provide a message text."
-            >
-              <MDBTextArea wrapperClass="mb-4" label="Message" required />
-            </MDBValidationItem>
-
-            <MDBBtn
-              type="submit"
-              onClick={() => {
-                alert("მესიჯი გაგზავნილია");
-              }}
-              value="Send"
-              color="primary"
-              block
-              className="my-4"
-            >
-              Send
-            </MDBBtn>
-          </MDBValidation>
+            <MarkerF position={center} />
+          </GoogleMap>
         </div>
       </div>
     </>
@@ -169,12 +134,24 @@ const Contact = () => {
 };
 const Contacten = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
   const form = useRef();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: "AIzaSyC1ICqmw5FPn_8bKJCzqduZrnTwZSGlCPE",
+    libraries,
+  });
+
+  if (loadError) {
+    return <div>Error loading maps</div>;
+  }
+
+  if (!isLoaded) {
+    return <div>Loading maps</div>;
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -187,9 +164,12 @@ const Contacten = () => {
         "6eHxUfxxTjlUvb2kJ"
       )
       .then(
-        (result) => {},
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
         (error) => {
-          alert("error has occured");
+          console.log(error.text);
         }
       );
   };
@@ -212,106 +192,49 @@ const Contacten = () => {
     call(args).catch(console.error);
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <>
-      <div className="email" data-aos="zoom-out">
+      <div className="email">
         <div className="contact1">
-          <p className="p" style={{ fontWeight: "bold", letterSpacing: "2px" }}>
+          <p className="p" style={{ letterSpacing: "2px" }}>
             Phone:
           </p>
           <button className="icon" onClick={triggercall}>
-            <MDBIcon className="me-2" fas icon="phone-alt" />
+            <MDBIcon className="me-2" fas icon="mobile" />
             +995514000016
           </button>
           <button className="icon" onClick={triggercall1}>
-            <MDBIcon className="me-2" fas icon="phone-alt" />
+            <MDBIcon className="me-2" fas icon="mobile" />
             +995555777895
           </button>
           <p
             className="p"
             style={{
               marginTop: "20%",
-              fontWeight: "bold",
               letterSpacing: "2px",
             }}
           >
-            Email:{" "}
+            Email:
           </p>
-          <button className="icon" onClick={triggercall}>
-            <MDBIcon
-              className="me-2"
-              to="mailto:radix.ge@gmail.com"
-              fas
-              icon="fas fa-envelope"
-            />
-            radix.ge@gmail.com
+          <button className="icon">
+            <Link to="mailto:radix.ge@gmail.com">
+              <MDBIcon className="me-2" fas icon="fas fa-envelope" />
+              radix.ge@gmail.com
+            </Link>
           </button>
         </div>
         <div className="contact2">
-          {" "}
-          <MDBValidation
-            ref={form}
-            onSubmit={sendEmail}
-            noValidate
-            id="form"
-            className="text-center"
-            style={{ width: "100%", maxWidth: "300px" }}
+          <GoogleMap
+            mapContainerStyle={mapContainerStyle}
+            zoom={15}
+            center={center}
           >
-            <MDBValidationItem invalid feedback="Please provide your name.">
-              <MDBInput
-                label="Name"
-                v-model="name"
-                wrapperClass="mb-4"
-                required
-              />
-            </MDBValidationItem>
-
-            <MDBValidationItem invalid feedback="Please provide your email.">
-              <MDBInput
-                type="email"
-                label="Email address"
-                v-model="email"
-                wrapperClass="mb-4"
-                required
-              />
-            </MDBValidationItem>
-
-            <MDBValidationItem invalid feedback="Please provide mail subject.">
-              <MDBInput
-                label="Subject"
-                v-model="subject"
-                wrapperClass="mb-4"
-                required
-              />
-            </MDBValidationItem>
-
-            <MDBValidationItem
-              invalid
-              feedback="Please provide a message text."
-            >
-              <MDBTextArea wrapperClass="mb-4" label="Message" required />
-            </MDBValidationItem>
-
-            <MDBBtn
-              type="submit"
-              onClick={() => {
-                alert("Message Sent");
-              }}
-              value="Send"
-              color="primary"
-              block
-              className="my-4"
-            >
-              Send
-            </MDBBtn>
-          </MDBValidation>
+            <MarkerF position={center} />
+          </GoogleMap>
         </div>
       </div>
     </>
   );
 };
+
 export { Contact, Contacten };

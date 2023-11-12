@@ -177,24 +177,25 @@ function Structureen() {
   ];
   const info2 = [
     {
-      img: photo,
-      name: "Landa Lursmanashvili",
-      dsc: "Former President (2018-2021)",
-    },
-    {
       img: photo17,
       name: "Zurab Alkhanishvili",
       dsc: "Former President (2009-2014)",
     },
     {
-      img: photo20,
-      name: "Gvantsa Tabaghua",
-      dsc: "Former President-Elect",
-    },
-    {
       img: photo10,
       name: "Nino Gvasalia ",
       dsc: "Former President (2014-2018)",
+    },
+    {
+      img: photo,
+      name: "Landa Lursmanashvili",
+      dsc: "Former President (2018-2021)",
+    },
+
+    {
+      img: photo20,
+      name: "Gvantsa Tabaghua",
+      dsc: "Former President-Elect",
     },
   ];
   const info3 = [
@@ -258,66 +259,69 @@ function Structureen() {
   ];
   const info5 = [
     {
-      img: photo9,
-      name: " Nino Alkhanishvili",
-      dsc: "Coordinator of the young leaders department",
-    },
-    {
       img: photo3,
       name: "Beka Osepashvili",
       dsc: "Head of young leaders department",
     },
     {
+      img: photo9,
+      name: " Nino Alkhanishvili",
+      dsc: "Coordinator of the young leaders department",
+    },
+  ];
+  const info6 = [
+    {
       img: photo22,
       name: "Mamia Karchava",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo23,
       name: "Davit Pavliashvili",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo24,
       name: "Elmira Dashtiani",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo25,
       name: "Babeq Mohadami",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo26,
       name: "Lika Shengelaia",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo27,
       name: "Mariam Tskvitaria",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo28,
       name: "Katie Margiani",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo29,
       name: "Sandro Dzmanashvil",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo30,
       name: "Mari Jishkariani",
-      dsc: "",
+      dsc: "Member",
     },
     {
       img: photo31,
       name: "Tako Bukhaidze",
-      dsc: "",
+      dsc: "Member",
     },
   ];
+
   return (
     <>
       <h1 className="structuret">Radix Team</h1>
@@ -441,7 +445,7 @@ function Structureen() {
         Young Leaders <p>Department </p>{" "}
       </h1>
 
-      <div className="structure">
+      <div className="structure" style={{ paddingBottom: "0" }}>
         {info5.map((info, i) => {
           return (
             <>
@@ -450,6 +454,32 @@ function Structureen() {
                   style={{
                     border: "none",
 
+                    width: 300,
+                    margin: "5vh",
+                  }}
+                  cover={
+                    <img
+                      alt="example"
+                      src={info.img}
+                      style={{ borderRadius: "10px" }}
+                    />
+                  }
+                >
+                  <Meta title={info.name} description={info.dsc} />
+                </Card>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <div className="structure" style={{ marginTop: "0" }}>
+        {info6.map((info, i) => {
+          return (
+            <>
+              <div className="card">
+                <Card
+                  style={{
+                    border: "none",
                     width: 300,
                     margin: "5vh",
                   }}
@@ -610,24 +640,25 @@ function Structure() {
   ];
   const info2 = [
     {
-      img: photo,
-      name: "ლანდა ლურსმანაშვილი",
-      dsc: "ყოფილი პრეზიდენტი (2018-2021)",
-    },
-    {
       img: photo17,
       name: "ზურაბ ალხანიშვილი",
       dsc: "ყოფილი პრეზიდენტი (2009-2014)",
     },
     {
-      img: photo20,
-      name: "გვანცა ტაბაღუა",
-      dsc: "ყოფილი პრეზიდენტი-Elect",
-    },
-    {
       img: photo10,
       name: "ნინო გვასალია",
       dsc: "ყოფილი პრეზიდენტი (2014-2018)",
+    },
+    {
+      img: photo,
+      name: "ლანდა ლურსმანაშვილი",
+      dsc: "ყოფილი პრეზიდენტი (2018-2021)",
+    },
+
+    {
+      img: photo20,
+      name: "გვანცა ტაბაღუა",
+      dsc: "ყოფილი პრეზიდენტი-Elect",
     },
   ];
   const info3 = [
@@ -691,64 +722,66 @@ function Structure() {
   ];
   const info5 = [
     {
-      img: photo9,
-      name: "ნინო ალხანიშვილი",
-      dsc: "ახალგაზრდული დეპარტამენტის კოორდინატორი",
-    },
-    {
       img: photo3,
       name: "ბექა ოსეფაშვილი",
       dsc: "ახალგაზრდული დეპარტამენტის ხელმძღვანელი",
     },
     {
+      img: photo9,
+      name: "ნინო ალხანიშვილი",
+      dsc: "ახალგაზრდული დეპარტამენტის კოორდინატორი",
+    },
+  ];
+  const info6 = [
+    {
       img: photo22,
       name: "მამია ქარჩავა",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo23,
       name: "დავით პავლიაშვილი",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo24,
       name: "ელმირა დაშთიანი",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo25,
       name: "ბაბექ მოჰადამი",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo26,
       name: "ლიკა შენგელაია",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo27,
       name: "მარიამ ცქვიტარია",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo28,
       name: "ქეთი მარღიანი",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo29,
       name: "სანდრო ძმანაშვილი",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo30,
       name: "მარი ჯიშკარიანი",
-      dsc: "",
+      dsc: "წევრი",
     },
     {
       img: photo31,
       name: "თაკო ბუხაიძე",
-      dsc: "",
+      dsc: "წევრი",
     },
   ];
   return (
@@ -868,9 +901,9 @@ function Structure() {
           );
         })}
       </div>
-      <h1 className="structureti">ახალგაზრდული დეპარტამენტი</h1>
+      <h1 className="structureti">ახალგაზრდა ლიდერთა დეპარტამენტი</h1>
 
-      <div className="structure">
+      <div className="structure" style={{ paddingBottom: "0" }}>
         {info5.map((info, i) => {
           return (
             <>
@@ -879,6 +912,32 @@ function Structure() {
                   style={{
                     border: "none",
 
+                    width: 300,
+                    margin: "5vh",
+                  }}
+                  cover={
+                    <img
+                      alt="example"
+                      src={info.img}
+                      style={{ borderRadius: "10px" }}
+                    />
+                  }
+                >
+                  <Meta title={info.name} description={info.dsc} />
+                </Card>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <div className="structure" style={{ marginTop: "0" }}>
+        {info6.map((info, i) => {
+          return (
+            <>
+              <div className="card">
+                <Card
+                  style={{
+                    border: "none",
                     width: 300,
                     margin: "5vh",
                   }}

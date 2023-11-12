@@ -6,12 +6,13 @@ import Footer from "./footer";
 import { Contact, Contacten } from "./contact/contact";
 import { Routes, Route } from "react-router-dom";
 import { Structureen, Structure } from "./structure/structure";
+import Paralax from "./main/main";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={[<Navbar />]} />
+        <Route path="/" element={[<Navbar />, <Paralax />]} />
         <Route path="/aboutus" element={[<Navbar />, <About />, <Footer />]} />
         <Route
           path="/aboutusen"
@@ -33,7 +34,7 @@ function App() {
           path="/contacten"
           element={[<Navbaren />, <Contacten />, <Footer />]}
         />
-        <Route path="/en" element={[<Navbaren />]} />
+        <Route path="/en" element={[<Navbaren />, <Paralax />]} />
       </Routes>
     </div>
   );
