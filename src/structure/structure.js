@@ -33,6 +33,9 @@ import photo28 from "./assets/Katie-Margiani.jpg";
 import photo29 from "./assets/Sandro-Dzmanashvili.jpg";
 import photo30 from "./assets/Mari-Jishkariani.jpg";
 import photo31 from "./assets/Tako-Bukhaidze.jpeg";
+import photo32 from "./assets/TeaRazmadze.jpg";
+import photo33 from "./assets/BekaBerulava.jpg";
+import photo34 from "./assets/BekaKelenjeridze.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -256,6 +259,11 @@ function Structureen() {
       name: "Lasha Chantladze",
       dsc: "Head of Guria RO",
     },
+    {
+      img: photo32,
+      name: "Tea Razmadze",
+      dsc: "Head of Kakheti RO",
+    },
   ];
   const info5 = [
     {
@@ -320,6 +328,16 @@ function Structureen() {
       name: "Tako Bukhaidze",
       dsc: "Member",
     },
+    {
+      img: photo33,
+      name: "Beka Berulava",
+      dsc: "Member",
+    },
+    {
+      img: photo34,
+      name: "Beka Kelenjeridze",
+      dsc: "Member",
+    },
   ];
 
   return (
@@ -354,7 +372,7 @@ function Structureen() {
       </div>
       <h1 className="structureti">Advisory Council</h1>
 
-      <div className="structure">
+      <div className="structure" data-aos="fade-right">
         {info2.map((info, i) => {
           return (
             <>
@@ -383,7 +401,7 @@ function Structureen() {
       </div>
       <h1 className="structureti">Board members</h1>
 
-      <div className="structure">
+      <div className="structure" data-aos="fade-right">
         {info3.map((info, i) => {
           return (
             <>
@@ -414,7 +432,7 @@ function Structureen() {
         Representatives <p>of region</p>
       </h1>
 
-      <div className="structure">
+      <div className="structure" data-aos="fade-right">
         {info4.map((info, i) => {
           return (
             <>
@@ -445,7 +463,11 @@ function Structureen() {
         Young Leaders <p>Department </p>{" "}
       </h1>
 
-      <div className="structure" style={{ paddingBottom: "0" }}>
+      <div
+        className="structure"
+        data-aos="fade-right"
+        style={{ paddingBottom: "0" }}
+      >
         {info5.map((info, i) => {
           return (
             <>
@@ -472,7 +494,11 @@ function Structureen() {
           );
         })}
       </div>
-      <div className="structure" style={{ marginTop: "0" }}>
+      <div
+        className="structure"
+        data-aos="fade-right"
+        style={{ marginTop: "0" }}
+      >
         {info6.map((info, i) => {
           return (
             <>
@@ -658,7 +684,7 @@ function Structure() {
     {
       img: photo20,
       name: "გვანცა ტაბაღუა",
-      dsc: "ყოფილი პრეზიდენტი-Elect",
+      dsc: "ყოფილი არჩეული პრეზიდენტი",
     },
   ];
   const info3 = [
@@ -718,6 +744,11 @@ function Structure() {
       img: photo21,
       name: "ლაშა ჩანტლაძე",
       dsc: "გურიის რეგიონული ორგანიზაციის წარმომადგენელი",
+    },
+    {
+      img: photo32,
+      name: "თეა რაზმაძე",
+      dsc: "კახეთის რეგიონული ორგანიზაციის წარმომადგენელი",
     },
   ];
   const info5 = [
@@ -783,6 +814,16 @@ function Structure() {
       name: "თაკო ბუხაიძე",
       dsc: "წევრი",
     },
+    {
+      img: photo33,
+      name: "ბექა ბერულავა",
+      dsc: "წევრი",
+    },
+    {
+      img: photo34,
+      name: "ბექა კელენჯერიძე",
+      dsc: "წევრი",
+    },
   ];
   return (
     <>
@@ -816,7 +857,7 @@ function Structure() {
       </div>
       <h1 className="structureti">მრჩეველთა საბჭო</h1>
 
-      <div className="structure">
+      <div className="structure" data-aos="fade-right">
         {info2.map((info, i) => {
           return (
             <>
@@ -845,7 +886,7 @@ function Structure() {
       </div>
       <h1 className="structureti">გამგეობის წევრები</h1>
 
-      <div className="structure">
+      <div className="structure" data-aos="fade-right">
         {info3.map((info, i) => {
           return (
             <>
@@ -874,7 +915,7 @@ function Structure() {
       </div>
       <h1 className="structureti">რეგიონის წარმომადგენლები</h1>
 
-      <div className="structure">
+      <div className="structure" data-aos="fade-right">
         {info4.map((info, i) => {
           return (
             <>
@@ -903,7 +944,11 @@ function Structure() {
       </div>
       <h1 className="structureti">ახალგაზრდა ლიდერთა დეპარტამენტი</h1>
 
-      <div className="structure" style={{ paddingBottom: "0" }}>
+      <div
+        className="structure"
+        data-aos="fade-right"
+        style={{ paddingBottom: "0" }}
+      >
         {info5.map((info, i) => {
           return (
             <>
@@ -930,7 +975,11 @@ function Structure() {
           );
         })}
       </div>
-      <div className="structure" style={{ marginTop: "0" }}>
+      <div
+        className="structure"
+        data-aos="fade-right"
+        style={{ marginTop: "0" }}
+      >
         {info6.map((info, i) => {
           return (
             <>
