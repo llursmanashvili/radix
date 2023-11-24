@@ -370,35 +370,7 @@ function Structureen() {
           );
         })}
       </div>
-      <h1 className="structureti">Advisory Council</h1>
 
-      <div className="structure" data-aos="fade-right">
-        {info2.map((info, i) => {
-          return (
-            <>
-              <div className="card">
-                <Card
-                  style={{
-                    border: "none",
-
-                    width: 300,
-                    margin: "5vh",
-                  }}
-                  cover={
-                    <img
-                      alt="example"
-                      src={info.img}
-                      style={{ borderRadius: "10px" }}
-                    />
-                  }
-                >
-                  <Meta title={info.name} description={info.dsc} />
-                </Card>
-              </div>
-            </>
-          );
-        })}
-      </div>
       <h1 className="structureti">Board members</h1>
 
       <div className="structure" data-aos="fade-right">
@@ -506,6 +478,35 @@ function Structureen() {
                 <Card
                   style={{
                     border: "none",
+                    width: 300,
+                    margin: "5vh",
+                  }}
+                  cover={
+                    <img
+                      alt="example"
+                      src={info.img}
+                      style={{ borderRadius: "10px" }}
+                    />
+                  }
+                >
+                  <Meta title={info.name} description={info.dsc} />
+                </Card>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <h1 className="structureti">Advisory Council</h1>
+
+      <div className="structure" data-aos="fade-right">
+        {info2.map((info, i) => {
+          return (
+            <>
+              <div className="card">
+                <Card
+                  style={{
+                    border: "none",
+
                     width: 300,
                     margin: "5vh",
                   }}
@@ -855,35 +856,7 @@ function Structure() {
           );
         })}
       </div>
-      <h1 className="structureti">მრჩეველთა საბჭო</h1>
 
-      <div className="structure" data-aos="fade-right">
-        {info2.map((info, i) => {
-          return (
-            <>
-              <div className="card">
-                <Card
-                  style={{
-                    border: "none",
-
-                    width: 300,
-                    margin: "5vh",
-                  }}
-                  cover={
-                    <img
-                      alt="example"
-                      src={info.img}
-                      style={{ borderRadius: "10px" }}
-                    />
-                  }
-                >
-                  <Meta title={info.name} description={info.dsc} />
-                </Card>
-              </div>
-            </>
-          );
-        })}
-      </div>
       <h1 className="structureti">გამგეობის წევრები</h1>
 
       <div className="structure" data-aos="fade-right">
@@ -987,6 +960,35 @@ function Structure() {
                 <Card
                   style={{
                     border: "none",
+                    width: 300,
+                    margin: "5vh",
+                  }}
+                  cover={
+                    <img
+                      alt="example"
+                      src={info.img}
+                      style={{ borderRadius: "10px" }}
+                    />
+                  }
+                >
+                  <Meta title={info.name} description={info.dsc} />
+                </Card>
+              </div>
+            </>
+          );
+        })}
+      </div>
+      <h1 className="structureti">მრჩეველთა საბჭო</h1>
+
+      <div className="structure" data-aos="fade-right">
+        {info2.map((info, i) => {
+          return (
+            <>
+              <div className="card">
+                <Card
+                  style={{
+                    border: "none",
+
                     width: 300,
                     margin: "5vh",
                   }}

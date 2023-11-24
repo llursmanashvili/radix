@@ -1,0 +1,21 @@
+.cover{
+    background-image: url(cover);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 6%;
+    height: 90vh;
+}
+@media only screen and (max-width:900px) {
+    .cover{
+        background-image: url(cover);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height:200px;
+        margin-top: 30%;
+
+    }
+}

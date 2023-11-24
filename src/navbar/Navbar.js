@@ -45,6 +45,7 @@ function Navbar() {
         style={{
           position: "fixed",
           zIndex: "1",
+          marginBottom: "200px",
           width: "100%",
           backgroundColor: navColor,
           transition: "all 1s",
