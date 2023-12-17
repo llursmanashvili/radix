@@ -25,6 +25,8 @@ function Navbar() {
   const [navSize, setnavSize] = useState("9rem");
   const [navColor, setnavColor] = useState("white");
   const [navColors, setnavColors] = useState("#2c5194");
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#2c5194") : setnavColor("white");
@@ -146,8 +148,24 @@ function Navbar() {
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/contact"
+                    onClick={() => toggle()}
                   >
                     კონტაქტი
+                  </Link>
+                </MDBNavbarLink>
+              </MDBNavbarItem>{" "}
+              <MDBNavbarItem>
+                <MDBNavbarLink
+                  style={{
+                    fontSize: "125%",
+                    marginRight: "10px",
+                  }}
+                >
+                  <Link
+                    style={{ color: navColors, textDecoration: "inherit" }}
+                    to="/signin"
+                  >
+                    შესვლა
                   </Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>

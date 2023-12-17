@@ -1,14 +1,14 @@
-import logo from "./logo.svg";
 import { Navbar, Navbaren } from "./navbar/Navbar";
 import "./App.css";
 import Cover from "./navbar/cover";
-
+import { AuthContextProvider } from "./registration/authcontext";
 import { About, Abouten } from "./aboutus/about";
 import Footer from "./footer";
 import { Contact, Contacten } from "./contact/contact";
 import { Routes, Route } from "react-router-dom";
 import { Structureen, Structure } from "./structure/structure";
 import Paralax from "./main/main";
+import Form from "./registration/regi/form";
 
 function App() {
   return (
@@ -36,7 +36,8 @@ function App() {
         <Route
           path="/contacten"
           element={[<Navbaren />, <Contacten />, <Footer />]}
-        />
+        />{" "}
+        <Route path="/signin" element={[<Navbar />, <Form />, <Footer />]} />
       </Routes>
     </div>
   );

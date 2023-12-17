@@ -91,6 +91,16 @@ const Contact = () => {
   return (
     <>
       <div className="email">
+        {" "}
+        <div className="contact2">
+          <GoogleMap
+            mapContainerStyle={mapContainerStyle}
+            zoom={15}
+            center={center}
+          >
+            <MarkerF position={center} />
+          </GoogleMap>
+        </div>
         <div className="contact1">
           <p className="p" style={{ letterSpacing: "2px" }}>
             დაგვიკავშირდით
@@ -118,15 +128,6 @@ const Contact = () => {
               radix.ge@gmail.com
             </Link>
           </button>
-        </div>
-        <div className="contact2">
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            zoom={15}
-            center={center}
-          >
-            <MarkerF position={center} />
-          </GoogleMap>
         </div>
       </div>
     </>
@@ -195,6 +196,16 @@ const Contacten = () => {
   return (
     <>
       <div className="email">
+        {" "}
+        <div className="contact2">
+          <GoogleMap
+            mapContainerStyle={mapContainerStyle}
+            zoom={15}
+            center={center}
+          >
+            <MarkerF position={center} />
+          </GoogleMap>
+        </div>
         <div className="contact1">
           <p className="p" style={{ letterSpacing: "2px" }}>
             Phone:
@@ -222,15 +233,6 @@ const Contacten = () => {
               radix.ge@gmail.com
             </Link>
           </button>
-        </div>
-        <div className="contact2">
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            zoom={15}
-            center={center}
-          >
-            <MarkerF position={center} />
-          </GoogleMap>
         </div>
       </div>
     </>
