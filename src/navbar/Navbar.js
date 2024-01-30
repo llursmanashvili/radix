@@ -178,7 +178,7 @@ function Navbar() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="/signin"
+                    to="https://forms.gle/kniCEPaB3BdU76YJ8"
                   >
                     რეგისტრაცია
                   </Link>
@@ -371,7 +371,7 @@ function Navbaren() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="/contacten"
+                    to="https://forms.gle/kniCEPaB3BdU76YJ8"
                   >
                     Registration
                   </Link>
