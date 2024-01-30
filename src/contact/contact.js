@@ -182,7 +182,7 @@ const Contact = () => {
               flexDirection: "column",
             }}
           >
-            <Link to="mailto:radix.ge@gmail.com">
+            <Link to="https://maps.app.goo.gl/kiq98MSkDNAq5KRy5">
               <button className="icon">
                 <MDBIcon
                   className="me-2"
@@ -382,7 +382,7 @@ const Contacten = () => {
               flexDirection: "column",
             }}
           >
-            <Link to="mailto:radix.ge@gmail.com">
+            <Link to="https://maps.app.goo.gl/kiq98MSkDNAq5KRy5">
               <button className="icon">
                 <MDBIcon
                   className="me-2"
