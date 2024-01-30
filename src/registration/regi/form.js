@@ -27,12 +27,13 @@ function Form() {
       .then((res) => {
         alert("SUCCESSFULLY SUBMITTED");
         setLoading(false);
+        window.location.reload(false);
       })
       .catch((err) => console.log(err));
   };
   return (
     <form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
-      <MDBContainer fluid style={{ paddingTop: "10%" }}>
+      <MDBContainer fluid style={{ paddingTop: "13%" }}>
         <MDBRow className=" align-items-center m-5">
           <MDBCard>
             <MDBCardBody className="px-4">

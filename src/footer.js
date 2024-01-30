@@ -20,7 +20,7 @@ export default function Footer() {
             floating
             className="m-1"
             style={{ backgroundColor: "#3b5998" }}
-            href="#!"
+            href="https://www.facebook.com/RADIX.GE"
             role="button"
           >
             <MDBIcon fab icon="facebook-f" />
@@ -30,7 +30,7 @@ export default function Footer() {
             floating
             className="m-1"
             style={{ backgroundColor: "#55acee" }}
-            href="#!"
+            href="https://twitter.com/SRC_RADIX?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3ASRC_RADIX%7Ctwcon%5Es2"
             role="button"
           >
             <MDBIcon fab icon="twitter" />
@@ -40,16 +40,16 @@ export default function Footer() {
             floating
             className="m-1"
             style={{ backgroundColor: "#dd4b39" }}
-            href="#!"
+            href="mailto:radix.ge@gmail.com"
             role="button"
           >
-            <MDBIcon fab icon="google" />
+            <MDBIcon fas icon="envelope" />{" "}
           </MDBBtn>
           <MDBBtn
             floating
             className="m-1"
             style={{ backgroundColor: "#ac2bac" }}
-            href="#!"
+            href="https://www.instagram.com/radixge/"
             role="button"
           >
             <MDBIcon fab icon="instagram" />
@@ -59,20 +59,10 @@ export default function Footer() {
             floating
             className="m-1"
             style={{ backgroundColor: "#0082ca" }}
-            href="#!"
+            href="https://maps.app.goo.gl/kiq98MSkDNAq5KRy5"
             role="button"
           >
-            <MDBIcon fab icon="linkedin-in" />
-          </MDBBtn>
-
-          <MDBBtn
-            floating
-            className="m-1"
-            style={{ backgroundColor: "#333333" }}
-            href="#!"
-            role="button"
-          >
-            <MDBIcon fab icon="github" />
+            <MDBIcon fas icon="map-marked-alt" />{" "}
           </MDBBtn>
         </section>
       </MDBContainer>

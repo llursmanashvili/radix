@@ -19,7 +19,7 @@ import {
 import logo from "./logo.png";
 import About from "../aboutus/about";
 import { FlatTree } from "framer-motion";
-
+import program from "./program.pdf";
 function Navbar() {
   const [openBasic, setOpenBasic] = useState(false);
   const [navSize, setnavSize] = useState("9rem");
@@ -147,13 +147,13 @@ function Navbar() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="/contact"
-                    onClick={() => toggle()}
+                    onClick={() => window.open(program)}
+                    target="_blank"
                   >
-                    კონტაქტი
+                    პროგრამა
                   </Link>
                 </MDBNavbarLink>
-              </MDBNavbarItem>{" "}
+              </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink
                   style={{
@@ -165,10 +165,41 @@ function Navbar() {
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/signin"
                   >
-                    შესვლა
+                    სპიკერები
                   </Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink
+                  style={{
+                    fontSize: "125%",
+                    marginRight: "10px",
+                  }}
+                >
+                  <Link
+                    style={{ color: navColors, textDecoration: "inherit" }}
+                    to="/signin"
+                  >
+                    რეგისტრაცია
+                  </Link>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink
+                  style={{
+                    fontSize: "125%",
+                    marginRight: "10px",
+                  }}
+                >
+                  <Link
+                    style={{ color: navColors, textDecoration: "inherit" }}
+                    to="/contact"
+                    onClick={() => toggle()}
+                  >
+                    კონტაქტი
+                  </Link>
+                </MDBNavbarLink>
+              </MDBNavbarItem>{" "}
               <MDBNavbarItem>
                 <Link to="/en">
                   <MDBNavbarLink
@@ -299,6 +330,52 @@ function Navbaren() {
                     </MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink
+                  style={{
+                    fontSize: "125%",
+                    marginRight: "10px",
+                  }}
+                >
+                  <Link
+                    style={{ color: navColors, textDecoration: "inherit" }}
+                    onClick={() => window.open(program)}
+                    target="_blank"
+                  >
+                    Program
+                  </Link>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink
+                  style={{
+                    fontSize: "125%",
+                    marginRight: "10px",
+                  }}
+                >
+                  <Link
+                    style={{ color: navColors, textDecoration: "inherit" }}
+                    to="/contacten"
+                  >
+                    Speakers
+                  </Link>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink
+                  style={{
+                    fontSize: "125%",
+                    marginRight: "10px",
+                  }}
+                >
+                  <Link
+                    style={{ color: navColors, textDecoration: "inherit" }}
+                    to="/contacten"
+                  >
+                    Registration
+                  </Link>
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink

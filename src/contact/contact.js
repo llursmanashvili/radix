@@ -19,16 +19,28 @@ import "aos/dist/aos.css";
 
 // npm i @emailjs/browser
 const libraries = ["places"];
+const mapContainerStylee = {
+  width: "50vh",
+  height: "60vh",
+};
 const mapContainerStyle = {
-  width: "45vh",
-  height: "30vh",
+  width: "130vh",
+  height: "60vh",
 };
 const center = {
-  lat: 7.2905715, // default latitude
-  lng: 80.6337262, // default longitude
+  lat: 41.71191268024096, // default latitude
+  lng: 44.75611613893036, // default longitude
 };
-
 const Contact = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 900px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 900px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -93,47 +105,142 @@ const Contact = () => {
       <div className="email">
         {" "}
         <div className="contact2">
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            zoom={15}
-            center={center}
-          >
-            <MarkerF position={center} />
-          </GoogleMap>
+          {matches && (
+            <GoogleMap
+              mapContainerStyle={mapContainerStyle}
+              zoom={15}
+              center={center}
+            >
+              <MarkerF position={center} />
+            </GoogleMap>
+          )}
+          {!matches && (
+            <GoogleMap
+              mapContainerStyle={mapContainerStylee}
+              zoom={15}
+              center={center}
+            >
+              <MarkerF position={center} />
+            </GoogleMap>
+          )}
         </div>
         <div className="contact1">
-          <p className="p" style={{ letterSpacing: "2px" }}>
-            დაგვიკავშირდით
-          </p>
-          <button className="icon" onClick={triggercall}>
-            <MDBIcon className="me-2" fas icon="mobile" />
-            +995514000016
-          </button>
-          <button className="icon" onClick={triggercall1}>
-            <MDBIcon className="me-2" fas icon="mobile" />
-            +995555777895
-          </button>
-          <p
-            className="p"
+          <div
             style={{
-              marginTop: "20%",
-              letterSpacing: "2px",
+              display: "flex",
+              margin: "50px",
+              marginLeft: "-8%",
+              justifyContent: "left",
+              flexDirection: "column",
             }}
           >
-            მოგვწერეთ{" "}
-          </p>
-          <button className="icon">
+            <button className="icon" onClick={triggercall}>
+              <MDBIcon
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  display: "flex",
+                  marginBottom: "10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginRight: " 5px",
+                  borderRadius: "50%",
+                  borderStyle: "solid",
+                  borderWidth: "3px",
+                }}
+                className="me-2"
+                fas
+                icon="phone-volume"
+              />
+              <h1> +995514000016</h1>
+            </button>
+            <button className="icon" onClick={triggercall1}>
+              <MDBIcon
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginRight: " 5px",
+                  borderRadius: "50%",
+                  borderStyle: "solid",
+                  borderWidth: "3px",
+                }}
+                className="me-2"
+                fas
+                icon="phone-volume"
+              />
+              <h1> +995555777895</h1>
+            </button>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              margin: "50px",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
             <Link to="mailto:radix.ge@gmail.com">
-              <MDBIcon className="me-2" fas icon="fas fa-envelope" />
-              radix.ge@gmail.com
+              <button className="icon">
+                <MDBIcon
+                  className="me-2"
+                  fas
+                  icon="map-marker-alt"
+                  style={{
+                    height: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginRight: " 8px",
+                    borderRadius: "50%",
+                    borderStyle: "solid",
+                    borderWidth: "3px",
+                    width: "50px",
+                  }}
+                />
+                <h2> Pullman Tbilisi Axis Towers </h2>
+              </button>{" "}
             </Link>
-          </button>
+            <Link to="mailto:radix.ge@gmail.com">
+              <button className="icon">
+                <MDBIcon
+                  className="me-2"
+                  fas
+                  icon="fas fa-envelope"
+                  style={{
+                    height: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginRight: " 8px",
+                    borderRadius: "50%",
+                    borderStyle: "solid",
+                    borderWidth: "3px",
+                    width: "50px",
+                  }}
+                />
+                <h2> radix.ge@gmail.com</h2>
+              </button>{" "}
+            </Link>
+          </div>
         </div>
       </div>
     </>
   );
 };
 const Contacten = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 900px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 900px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -198,41 +305,126 @@ const Contacten = () => {
       <div className="email">
         {" "}
         <div className="contact2">
-          <GoogleMap
-            mapContainerStyle={mapContainerStyle}
-            zoom={15}
-            center={center}
-          >
-            <MarkerF position={center} />
-          </GoogleMap>
+          {matches && (
+            <GoogleMap
+              mapContainerStyle={mapContainerStyle}
+              zoom={15}
+              center={center}
+            >
+              <MarkerF position={center} />
+            </GoogleMap>
+          )}
+          {!matches && (
+            <GoogleMap
+              mapContainerStyle={mapContainerStylee}
+              zoom={15}
+              center={center}
+            >
+              <MarkerF position={center} />
+            </GoogleMap>
+          )}
         </div>
         <div className="contact1">
-          <p className="p" style={{ letterSpacing: "2px" }}>
-            Phone:
-          </p>
-          <button className="icon" onClick={triggercall}>
-            <MDBIcon className="me-2" fas icon="mobile" />
-            +995514000016
-          </button>
-          <button className="icon" onClick={triggercall1}>
-            <MDBIcon className="me-2" fas icon="mobile" />
-            +995555777895
-          </button>
-          <p
-            className="p"
+          <div
             style={{
-              marginTop: "20%",
-              letterSpacing: "2px",
+              display: "flex",
+              margin: "50px",
+              marginLeft: "-8%",
+              justifyContent: "left",
+              flexDirection: "column",
             }}
           >
-            Email:
-          </p>
-          <button className="icon">
+            <button className="icon" onClick={triggercall}>
+              <MDBIcon
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  display: "flex",
+                  marginBottom: "10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginRight: " 5px",
+                  borderRadius: "50%",
+                  borderStyle: "solid",
+                  borderWidth: "3px",
+                }}
+                className="me-2"
+                fas
+                icon="phone-volume"
+              />
+              <h1> +995514000016</h1>
+            </button>
+            <button className="icon" onClick={triggercall1}>
+              <MDBIcon
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginRight: " 5px",
+                  borderRadius: "50%",
+                  borderStyle: "solid",
+                  borderWidth: "3px",
+                }}
+                className="me-2"
+                fas
+                icon="phone-volume"
+              />
+              <h1> +995555777895</h1>
+            </button>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              margin: "50px",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
             <Link to="mailto:radix.ge@gmail.com">
-              <MDBIcon className="me-2" fas icon="fas fa-envelope" />
-              radix.ge@gmail.com
+              <button className="icon">
+                <MDBIcon
+                  className="me-2"
+                  fas
+                  icon="map-marker-alt"
+                  style={{
+                    height: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginRight: " 8px",
+                    borderRadius: "50%",
+                    borderStyle: "solid",
+                    borderWidth: "3px",
+                    width: "50px",
+                  }}
+                />
+                <h2> Pullman Tbilisi Axis Towers </h2>
+              </button>{" "}
             </Link>
-          </button>
+            <Link to="mailto:radix.ge@gmail.com">
+              <button className="icon">
+                <MDBIcon
+                  className="me-2"
+                  fas
+                  icon="fas fa-envelope"
+                  style={{
+                    height: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginRight: " 8px",
+                    borderRadius: "50%",
+                    borderStyle: "solid",
+                    borderWidth: "3px",
+                    width: "50px",
+                  }}
+                />
+                <h2> radix.ge@gmail.com</h2>
+              </button>{" "}
+            </Link>
+          </div>
         </div>
       </div>
     </>

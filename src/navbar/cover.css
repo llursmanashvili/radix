@@ -1,5 +1,5 @@
 .cover{
-    background-image: url(cover);
+    background-image: url("./Cover.jpg");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,8 +14,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height:200px;
-        margin-top: 30%;
+        height:auto;
+        margin-top: 25%;
 
     }
 }
