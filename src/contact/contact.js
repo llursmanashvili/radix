@@ -83,7 +83,7 @@ const Contact = () => {
   };
   const triggercall = () => {
     const args = {
-      number: "  +995 514 00 00 16", // String value with the number to call
+      number: "  +995558901121", // String value with the number to call
       prompt: false, // Optional boolean property. Determines if the user should be prompted prior to the call
       skipCanOpen: true, // Skip the canOpenURL check
     };
@@ -92,7 +92,7 @@ const Contact = () => {
   };
   const triggercall1 = () => {
     const args = {
-      number: "+995 555 77 78 95", // String value with the number to call
+      number: "+995593937798", // String value with the number to call
       prompt: false, // Optional boolean property. Determines if the user should be prompted prior to the call
       skipCanOpen: true, // Skip the canOpenURL check
     };
@@ -152,7 +152,7 @@ const Contact = () => {
                 fas
                 icon="phone-volume"
               />
-              <h1> +995514000016</h1>
+              <h1> +995558901121 </h1>
             </button>
             <button className="icon" onClick={triggercall1}>
               <MDBIcon
@@ -171,7 +171,7 @@ const Contact = () => {
                 fas
                 icon="phone-volume"
               />
-              <h1> +995555777895</h1>
+              <h1> +995593937798</h1>
             </button>
           </div>
           <div
@@ -283,7 +283,7 @@ const Contacten = () => {
   };
   const triggercall = () => {
     const args = {
-      number: "  +995 514 00 00 16", // String value with the number to call
+      number: "  +995558901121", // String value with the number to call
       prompt: false, // Optional boolean property. Determines if the user should be prompted prior to the call
       skipCanOpen: true, // Skip the canOpenURL check
     };
@@ -292,7 +292,7 @@ const Contacten = () => {
   };
   const triggercall1 = () => {
     const args = {
-      number: "+995 555 77 78 95", // String value with the number to call
+      number: "+995593937798", // String value with the number to call
       prompt: false, // Optional boolean property. Determines if the user should be prompted prior to the call
       skipCanOpen: true, // Skip the canOpenURL check
     };
@@ -352,7 +352,7 @@ const Contacten = () => {
                 fas
                 icon="phone-volume"
               />
-              <h1> +995514000016</h1>
+              <h1> +995558901121 </h1>
             </button>
             <button className="icon" onClick={triggercall1}>
               <MDBIcon
@@ -371,7 +371,7 @@ const Contacten = () => {
                 fas
                 icon="phone-volume"
               />
-              <h1> +995555777895</h1>
+              <h1> +995593937798</h1>
             </button>
           </div>
           <div

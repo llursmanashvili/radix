@@ -20,6 +20,8 @@ import logo from "./logo.png";
 import About from "../aboutus/about";
 import { FlatTree } from "framer-motion";
 import program from "./program.pdf";
+import programen from "./programeng.pdf";
+
 function Navbar() {
   const [openBasic, setOpenBasic] = useState(false);
   const [navSize, setnavSize] = useState("9rem");
@@ -178,7 +180,7 @@ function Navbar() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="https://forms.gle/VoCZiHkPcEcGvG2v7"
+                    to="/registration"
                   >
                     რეგისტრაცია
                   </Link>
@@ -340,7 +342,7 @@ function Navbaren() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    onClick={() => window.open(program)}
+                    onClick={() => window.open(programen)}
                     target="_blank"
                   >
                     Program
@@ -371,7 +373,7 @@ function Navbaren() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="https://forms.gle/VoCZiHkPcEcGvG2v7"
+                    to="/registrationen"
                   >
                     Registration
                   </Link>

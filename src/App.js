@@ -2,15 +2,14 @@ import { useState, useEffect } from "react";
 import { Navbar, Navbaren } from "./navbar/Navbar";
 import "./App.css";
 import Cover from "./navbar/cover";
-import { AuthContextProvider } from "./registration/authcontext";
 import { About, Abouten } from "./aboutus/about";
 import Footer from "./footer";
 import { Contact, Contacten } from "./contact/contact";
 import { Routes, Route } from "react-router-dom";
 import { Structureen, Structure } from "./structure/structure";
-import Paralax from "./main/main";
-import Form from "./registration/regi/form";
+import { Paralax, Paralaxen } from "./main/main";
 import ClipLoader from "react-spinners/ClipLoader";
+import { Registration, Registrationen } from "./registration/registration";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -42,7 +41,7 @@ function App() {
           />
           <Route
             path="/en"
-            element={[<Navbaren />, <Cover />, <Paralax />, <Footer />]}
+            element={[<Navbaren />, <Cover />, <Paralaxen />, <Footer />]}
           />
           <Route
             path="/aboutus"
@@ -68,7 +67,14 @@ function App() {
             path="/contacten"
             element={[<Navbaren />, <Contacten />, <Footer />]}
           />{" "}
-          <Route path="/signin" element={[<Navbar />, <Form />, <Footer />]} />
+          <Route
+            path="/registration"
+            element={[<Navbar />, <Registration />, <Footer />]}
+          />{" "}
+          <Route
+            path="/registrationen"
+            element={[<Navbaren />, <Registrationen />, <Footer />]}
+          />{" "}
         </Routes>
       )}
     </div>

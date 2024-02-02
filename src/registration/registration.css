@@ -1,0 +1,32 @@
+.early{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 4vh;    padding-top: 15px;
+
+}
+.regcard{
+    margin: 2.5%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: rgba(234, 230, 230, 0.741);
+}
+.regcard:hover{
+    scale: 1.02;
+    transition: 9s;
+}
+.regbutton{
+    background-color: #2c5194;
+    color:white;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+@media screen and (max-width:900px){
+    .regbutton{
+        background-color: #2c5194;
+        color:white;
+        padding: 7.5px;
+        border-radius: 30px;
+        
+    }
+}

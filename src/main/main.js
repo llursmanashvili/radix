@@ -10,10 +10,10 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 import "./main.css";
-import photo from "./assets/logo.png";
+import photo from "./assets/ads.png";
 import photo1 from "./assets/logo2.png";
 import photo2 from "./assets/logo3.png";
-import photo3 from "./assets/logo4.png";
+import photo3 from "./assets/adsen.png";
 import photo4 from "./assets/logo6.png";
 import photo5 from "./assets/logo1.jpg";
 import photo6 from "./assets/logo5.jpg";
@@ -75,27 +75,29 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   );
 }
 
-export default function Paralax() {
+export function Paralax() {
   return (
     <section className="section">
+      {" "}
       <ParallaxText baseVelocity={-2}>
-        <img style={{ width: "20vh", height: "20vh" }} src={photo} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo1} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo2} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo3} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo5} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo6} />
+        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
+        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
+        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
+        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
       </ParallaxText>
-      <ParallaxText baseVelocity={2}>
-        {" "}
-        <img style={{ width: "20vh", height: "20vh" }} src={photo} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo1} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo2} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo3} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo5} />
-        <img style={{ width: "20vh", height: "20vh" }} src={photo6} />
+    </section>
+  );
+}
+
+export function Paralaxen() {
+  return (
+    <section className="section">
+      {" "}
+      <ParallaxText baseVelocity={-2}>
+        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
+        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
+        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
+        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
       </ParallaxText>
     </section>
   );
