@@ -27,9 +27,17 @@ function Navbar() {
   const [navSize, setnavSize] = useState("9rem");
   const [navColor, setnavColor] = useState("white");
   const [navColors, setnavColors] = useState("#2c5194");
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggle = () => setIsOpen(!isOpen);
+  const handleClick = () => {
+    // Toggle the state value using setOpenBasic
+    setOpenBasic(!openBasic);
 
+    // Your logic for opening the program
+    window.open(program);
+
+    // Additional logic goes here
+  };
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#2c5194") : setnavColor("white");
     window.scrollY > 10 ? setnavColors("white") : setnavColors("#2c5194");
@@ -60,7 +68,7 @@ function Navbar() {
         <MDBContainer fluid>
           <MDBNavbarBrand>
             {" "}
-            <Link to="/">
+            <Link to="/" onClick={() => setOpenBasic(!openBasic)}>
               <img
                 style={{
                   borderRadius: "10px",
@@ -97,13 +105,17 @@ function Navbar() {
                     <Link
                       style={{ color: navColors, textDecoration: "inherit" }}
                       to="/aboutus"
+                      onClick={() => setOpenBasic(!openBasic)}
                     >
                       ჩვენ შესახებ
                     </Link>
                   </MDBDropdownToggle>
 
                   <MDBDropdownMenu>
-                    <Link to="/structure">
+                    <Link
+                      to="/structure"
+                      onClick={() => setOpenBasic(!openBasic)}
+                    >
                       <MDBDropdownItem
                         style={{
                           color: "white",
@@ -149,7 +161,7 @@ function Navbar() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    onClick={() => window.open(program)}
+                    onClick={handleClick}
                     target="_blank"
                   >
                     პროგრამა
@@ -166,6 +178,7 @@ function Navbar() {
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/signin"
+                    onClick={() => setOpenBasic(!openBasic)}
                   >
                     სპიკერები
                   </Link>
@@ -181,6 +194,7 @@ function Navbar() {
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/registration"
+                    onClick={() => setOpenBasic(!openBasic)}
                   >
                     რეგისტრაცია
                   </Link>
@@ -196,14 +210,14 @@ function Navbar() {
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/contact"
-                    onClick={() => toggle()}
+                    onClick={() => setOpenBasic(!openBasic)}
                   >
                     კონტაქტი
                   </Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>{" "}
               <MDBNavbarItem>
-                <Link to="/en">
+                <Link to="/en" onClick={() => setOpenBasic(!openBasic)}>
                   <MDBNavbarLink
                     style={{
                       color: "white",
@@ -226,7 +240,15 @@ function Navbaren() {
   const [openBasic, setOpenBasic] = useState(false);
   const [navColor, setnavColor] = useState("white");
   const [navColors, setnavColors] = useState("#2c5194");
+  const handleClick = () => {
+    // Toggle the state value using setOpenBasic
+    setOpenBasic(!openBasic);
 
+    // Your logic for opening the program
+    window.open(programen);
+
+    // Additional logic goes here
+  };
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#2c5194") : setnavColor("white");
     window.scrollY > 10 ? setnavColors("white") : setnavColors("#2c5194");
@@ -253,7 +275,7 @@ function Navbaren() {
       >
         <MDBContainer fluid>
           <MDBNavbarBrand>
-            <Link to="/en">
+            <Link to="/en" onClick={() => setOpenBasic(!openBasic)}>
               <img
                 style={{
                   borderRadius: "10px",
@@ -290,13 +312,17 @@ function Navbaren() {
                     <Link
                       style={{ color: navColors, textDecoration: "inherit" }}
                       to="/aboutusen"
+                      onClick={() => setOpenBasic(!openBasic)}
                     >
                       About Us
                     </Link>
                   </MDBDropdownToggle>
 
                   <MDBDropdownMenu style={{ inset: "30% auto auto 25%" }}>
-                    <Link to="/structureen">
+                    <Link
+                      to="/structureen"
+                      onClick={() => setOpenBasic(!openBasic)}
+                    >
                       <MDBDropdownItem
                         style={{
                           color: "white",
@@ -342,7 +368,7 @@ function Navbaren() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    onClick={() => window.open(programen)}
+                    onClick={handleClick}
                     target="_blank"
                   >
                     Program
@@ -359,6 +385,7 @@ function Navbaren() {
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/contacten"
+                    onClick={() => setOpenBasic(!openBasic)}
                   >
                     Speakers
                   </Link>
@@ -374,6 +401,7 @@ function Navbaren() {
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/registrationen"
+                    onClick={() => setOpenBasic(!openBasic)}
                   >
                     Registration
                   </Link>
@@ -389,13 +417,14 @@ function Navbaren() {
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
                     to="/contacten"
+                    onClick={() => setOpenBasic(!openBasic)}
                   >
                     Contact
                   </Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link to="/">
+                <Link to="/" onClick={() => setOpenBasic(!openBasic)}>
                   <MDBNavbarLink
                     style={{
                       color: "white",
