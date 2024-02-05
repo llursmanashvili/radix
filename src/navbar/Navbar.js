@@ -177,7 +177,7 @@ function Navbar() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="/signin"
+                    to="/speakers"
                     onClick={() => setOpenBasic(!openBasic)}
                   >
                     სპიკერები
@@ -384,7 +384,7 @@ function Navbaren() {
                 >
                   <Link
                     style={{ color: navColors, textDecoration: "inherit" }}
-                    to="/contacten"
+                    to="/speakeren"
                     onClick={() => setOpenBasic(!openBasic)}
                   >
                     Speakers

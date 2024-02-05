@@ -10,7 +10,8 @@ import { Structureen, Structure } from "./structure/structure";
 import { Paralax, Paralaxen } from "./main/main";
 import ClipLoader from "react-spinners/ClipLoader";
 import { Registration, Registrationen } from "./registration/registration";
-
+import { Speakers, Speakersen } from "./speakers/speakers";
+import { Speakerdetail, Speakerdetailen } from "./speakers/speakerinfo";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -74,6 +75,22 @@ function App() {
           <Route
             path="/registrationen"
             element={[<Navbaren />, <Registrationen />, <Footer />]}
+          />{" "}
+          <Route
+            path="/speakers"
+            element={[<Navbar />, <Speakers />, <Footer />]}
+          />{" "}
+          <Route
+            path="/speakers/:link"
+            element={[<Navbar />, <Speakerdetail />, <Footer />]}
+          />{" "}
+          <Route
+            path="/speakeren"
+            element={[<Navbaren />, <Speakersen />, <Footer />]}
+          />{" "}
+          <Route
+            path="/speakeren/:link"
+            element={[<Navbaren />, <Speakerdetailen />, <Footer />]}
           />{" "}
         </Routes>
       )}
