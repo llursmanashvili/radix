@@ -12,12 +12,12 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import { info, info1, infoen, info1en } from "./data";
-
+import "./speakers.css";
 import { Link } from "react-router-dom";
 export function Speakers() {
   return (
     <>
-      <h1 style={{ paddingTop: "10%" }}>სექციის ხელმძღვანელები</h1>
+      <h1 className="title">სექციის ხელმძღვანელები</h1>
 
       <div style={{ paddingTop: "2%" }}>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -40,12 +40,9 @@ export function Speakers() {
                           />
                         </div>
                         <MDBTypography tag="h4">{speaker.title}</MDBTypography>
-
-                        <Link key={1} to={`/speakers/${speaker.link}`}>
-                          <MDBBtn className="mt-4 pb-2" rounded size="lg">
-                            იხილეთ მეტი
-                          </MDBBtn>
-                        </Link>
+                        <MDBBtn className="mt-4 pb-2" rounded size="lg">
+                          იხილეთ მეტი
+                        </MDBBtn>
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCol>
@@ -78,19 +75,9 @@ export function Speakers() {
                         </div>
                         <MDBTypography tag="h4">{speaker.title}</MDBTypography>
 
-                        <div className="mb-4 pb-2">
-                          <MDBBtn outline floating>
-                            <MDBIcon fab icon="facebook" size="lg" />
-                          </MDBBtn>
-                          <MDBBtn outline floating className="mx-1">
-                            <MDBIcon fab icon="twitter" size="lg" />
-                          </MDBBtn>
-                        </div>
-                        <Link key={1} to={`/speakers/${speaker.link}`}>
-                          <MDBBtn rounded size="lg">
-                            იხილეთ მეტი
-                          </MDBBtn>
-                        </Link>
+                        <MDBBtn className="mt-4 pb-2" rounded size="lg">
+                          იხილეთ მეტი
+                        </MDBBtn>
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCol>
@@ -106,7 +93,7 @@ export function Speakers() {
 export function Speakersen() {
   return (
     <>
-      <h1 style={{ paddingTop: "10%" }}>Section Heads</h1>
+      <h1 className="title">Section Heads</h1>
 
       <div style={{ paddingTop: "2%" }}>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
@@ -130,11 +117,9 @@ export function Speakersen() {
                         </div>
                         <MDBTypography tag="h4">{speaker.title}</MDBTypography>
 
-                        <Link key={1} to={`/speakeren/${speaker.link}`}>
-                          <MDBBtn className="mt-4 pb-2" rounded size="lg">
-                            Read More
-                          </MDBBtn>
-                        </Link>
+                        <MDBBtn className="mt-4 pb-2" rounded size="lg">
+                          Read More
+                        </MDBBtn>
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCol>
@@ -167,11 +152,9 @@ export function Speakersen() {
                         </div>
                         <MDBTypography tag="h4">{speaker.title}</MDBTypography>
 
-                        <Link key={1} to={`/speakeren/${speaker.link}`}>
-                          <MDBBtn className="mt-4 pb-2" rounded size="lg">
-                            Read More
-                          </MDBBtn>
-                        </Link>
+                        <MDBBtn className="mt-4 pb-2" rounded size="lg">
+                          Read More
+                        </MDBBtn>
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCol>

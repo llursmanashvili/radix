@@ -12,6 +12,7 @@ import photo10 from "./assets/tomaradzedima.jpg";
 import photo11 from "./assets/teanatsvlishvili.JPG";
 import photo12 from "./assets/zviadrekvava.JPG";
 import photo13 from "./assets/marimchedlishvili.JPG";
+import photo14 from "./assets/sophiosamkharadze.jpg";
 
 export const info = [
   {
@@ -43,6 +44,12 @@ export const info = [
     link: "4",
     title: "მარიამ ქურციკიძე",
     image: photo3,
+  },
+  {
+    desc: "",
+    link: "15",
+    title: "სოფიო სამხარაძე    ",
+    image: photo14,
   },
 ];
 export const infoen = [
@@ -76,6 +83,12 @@ export const infoen = [
     title: "Mariam Kurtsikidze",
     image: photo3,
   },
+  {
+    desc: "",
+    link: "15",
+    title: "Sophio Samkharadze    ",
+    image: photo14,
+  },
 ];
 
 export const info1 = [
@@ -100,7 +113,7 @@ export const info1 = [
   {
     desc: "",
     link: "8",
-    title: "პავლე ხუდგაძე",
+    title: "პავლე ხუჯაძე",
     image: photo7,
   },
   {
@@ -157,13 +170,13 @@ export const info1en = [
   {
     desc: "",
     link: "8",
-    title: "Pavle khudgadze",
+    title: "Pavle Khujadze",
     image: photo7,
   },
   {
     desc: "",
     link: "9",
-    title: "Qetevan Gogilashvili",
+    title: "Ketevan Gogilashvili",
     image: photo8,
   },
   {
