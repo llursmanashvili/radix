@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import "./registration.css";
 import { MDBIcon } from "mdb-react-ui-kit";
+import { useEffect } from "react";
 export function Registration() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleCopyClick = async () => {
     try {
       await navigator.clipboard.writeText("GE47BG0000000874599300");
@@ -14,7 +18,7 @@ export function Registration() {
     <div
       style={{
         width: "100%",
-        paddingTop: "150px",
+        paddingTop: "5%",
       }}
     >
       <h2 className="title">კონგრესზე რეგისტრაციის პირობები: </h2>
@@ -82,6 +86,9 @@ export function Registration() {
   );
 }
 export function Registrationen() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleCopyClick = async () => {
     try {
       await navigator.clipboard.writeText("GE47BG0000000874599300");
@@ -94,7 +101,7 @@ export function Registrationen() {
     <div
       style={{
         width: "100%",
-        paddingTop: "150px",
+        paddingTop: "5%",
       }}
     >
       <h2 className="title">The congress registration and conditions: </h2>

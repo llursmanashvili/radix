@@ -14,9 +14,7 @@ import photo from "./assets/ads.png";
 import photo1 from "./assets/logo2.png";
 import photo2 from "./assets/logo3.png";
 import photo3 from "./assets/adsen.png";
-import photo4 from "./assets/logo6.png";
-import photo5 from "./assets/logo1.jpg";
-import photo6 from "./assets/logo5.jpg";
+import photo4 from "./assets/logo7.png";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -79,10 +77,14 @@ export function Paralax() {
   return (
     <section className="section">
       {" "}
-      <ParallaxText baseVelocity={-2}>
+      <ParallaxText baseVelocity={-1}>
         <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
         <img style={{ width: "100vh", height: "20vh" }} src={photo} />
+        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
+        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
         <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
+        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
+        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
         <img style={{ width: "100vh", height: "20vh" }} src={photo} />
       </ParallaxText>
     </section>
@@ -93,10 +95,14 @@ export function Paralaxen() {
   return (
     <section className="section">
       {" "}
-      <ParallaxText baseVelocity={-2}>
+      <ParallaxText baseVelocity={-1}>
         <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
         <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
+        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
+        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
         <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
+        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
+        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
         <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
       </ParallaxText>
     </section>

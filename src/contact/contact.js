@@ -32,6 +32,9 @@ const center = {
   lng: 44.75611613893036, // default longitude
 };
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 900px)").matches
   );
@@ -231,6 +234,9 @@ const Contact = () => {
   );
 };
 const Contacten = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 900px)").matches
   );

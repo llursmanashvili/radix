@@ -13,6 +13,9 @@ import photo11 from "./assets/teanatsvlishvili.JPG";
 import photo12 from "./assets/zviadrekvava.JPG";
 import photo13 from "./assets/marimchedlishvili.JPG";
 import photo14 from "./assets/sophiosamkharadze.jpg";
+import photo15 from "./assets/deakholbaia.jpeg";
+import photo16 from "./assets/paataimnadze.jpg";
+import photo17 from "./assets/davitraminashvili.jpeg";
 
 export const info = [
   {
@@ -146,6 +149,24 @@ export const info1 = [
     title: "ზვიად რეკვავა",
     image: photo12,
   },
+  {
+    desc: "",
+    link: "15",
+    title: "დეა ყოლბაია",
+    image: photo15,
+  },
+  {
+    desc: "",
+    link: "16",
+    title: "პაატა იმნაძე",
+    image: photo16,
+  },
+  {
+    desc: "",
+    link: "17",
+    title: "დავით რამინაშვილი",
+    image: photo17,
+  },
 ];
 
 export const info1en = [
@@ -202,5 +223,23 @@ export const info1en = [
     link: "13",
     title: "Zviad Rekvava",
     image: photo12,
+  },
+  {
+    desc: "",
+    link: "15",
+    title: "Dea Kholbaia",
+    image: photo15,
+  },
+  {
+    desc: "",
+    link: "16",
+    title: "Paata Imnadze",
+    image: photo16,
+  },
+  {
+    desc: "",
+    link: "17",
+    title: "Davit Raminashvili",
+    image: photo17,
   },
 ];

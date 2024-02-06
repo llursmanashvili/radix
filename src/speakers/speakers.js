@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import {
   MDBCol,
   MDBContainer,
@@ -15,6 +16,9 @@ import { info, info1, infoen, info1en } from "./data";
 import "./speakers.css";
 import { Link } from "react-router-dom";
 export function Speakers() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <h1 className="title">სექციის ხელმძღვანელები</h1>
@@ -91,6 +95,9 @@ export function Speakers() {
   );
 }
 export function Speakersen() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <h1 className="title">Section Heads</h1>
