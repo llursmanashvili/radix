@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Navbaren } from "./navbar/Navbar";
 import "./App.css";
-import Cover from "./navbar/cover";
+import { Cover, Coveren } from "./navbar/cover";
 import { About, Abouten } from "./aboutus/about";
 import Footer from "./footer";
 import { Contact, Contacten } from "./contact/contact";
@@ -42,7 +42,7 @@ function App() {
           />
           <Route
             path="/en"
-            element={[<Navbaren />, <Cover />, <Paralaxen />, <Footer />]}
+            element={[<Navbaren />, <Coveren />, <Paralaxen />, <Footer />]}
           />
           <Route
             path="/aboutus"

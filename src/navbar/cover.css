@@ -1,3 +1,23 @@
+.regcontainer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+
+    margin-left:2%;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    padding: 7px 55px;
+    font-weight: 600;
+    font-size: x-large;
+    border-radius: 20px;
+    background-color: rgba(23, 70, 210, 0.729)
+  }
 .cover{
     background-image: url("./Cover.jpg");
     background-position:center;
@@ -15,7 +35,24 @@
         background-size: cover;
         width: 100%;
         height:auto;
-        margin-top: 25%;
+        margin-top: 26%;
 
     }
+    .regcontainer{
+        position: relative;
+        text-align: center;
+    }
+    .bottom-left {
+        position: absolute;
+        bottom: 25%;
+        margin-left:1%;
+                color: rgb(255, 255, 255);
+        background: none;
+        border: none;
+        padding: 4px 15px;
+        font-weight: 600;
+        font-size: x-large;
+        border-radius: 20px;
+        background-color: rgba(23, 70, 210, 0.729)
+      }
 }

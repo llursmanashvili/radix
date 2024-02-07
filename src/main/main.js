@@ -10,10 +10,9 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 import "./main.css";
-import photo from "./assets/ads.png";
-import photo1 from "./assets/logo2.png";
-import photo2 from "./assets/logo3.png";
-import photo3 from "./assets/adsen.png";
+import ads from "./assets/ads.png";
+import gea from "./assets/logo3.png";
+import adsen from "./assets/adsen.png";
 import photo4 from "./assets/logo7.png";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
@@ -77,15 +76,15 @@ export function Paralax() {
   return (
     <section className="section">
       {" "}
-      <ParallaxText baseVelocity={-1}>
-        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
-        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
-        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
-        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
-        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
-        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "100vh", height: "20vh" }} src={photo} />
+      <ParallaxText baseVelocity={-0.5}>
+        <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
+        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
+        <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
+        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
       </ParallaxText>
     </section>
   );
@@ -95,15 +94,15 @@ export function Paralaxen() {
   return (
     <section className="section">
       {" "}
-      <ParallaxText baseVelocity={-1}>
-        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
-        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
-        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
-        <img style={{ width: "100vh", height: "20vh" }} src={photo2} />{" "}
-        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
-        <img style={{ width: "70vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "100vh", height: "20vh" }} src={photo3} />
+      <ParallaxText baseVelocity={-0.5}>
+        <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
+        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
+        <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
+        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
+        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
       </ParallaxText>
     </section>
   );
