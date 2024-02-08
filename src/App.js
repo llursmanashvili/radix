@@ -11,8 +11,16 @@ import { Paralax, Paralaxen } from "./main/main";
 import ClipLoader from "react-spinners/ClipLoader";
 import { Registration, Registrationen } from "./registration/registration";
 import { Speakers, Speakersen } from "./speakers/speakers";
+import ReactGA from "react-ga";
+
 import { Speakerdetail, Speakerdetailen } from "./speakers/speakerinfo";
+function initizeAnalytics() {
+  ReactGA.initialize("UA-250256038-1");
+  ReactGA.pageview("/HomePage");
+}
 function App() {
+  initizeAnalytics();
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
