@@ -15,7 +15,7 @@ import ReactGA from "react-ga";
 
 import { Speakerdetail, Speakerdetailen } from "./speakers/speakerinfo";
 function initizeAnalytics() {
-  ReactGA.initialize("UA-250256038-1");
+  ReactGA.initialize("G-YNCZ4CWMCD");
   ReactGA.pageview("/HomePage");
 }
 function App() {
