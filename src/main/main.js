@@ -11,9 +11,10 @@ import {
 import { wrap } from "@motionone/utils";
 import "./main.css";
 import ads from "./assets/ads.png";
-import gea from "./assets/logo3.png";
 import adsen from "./assets/adsen.png";
-import photo4 from "./assets/logo7.png";
+import psp from "./assets/psp.png";
+import gea from "./assets/gea.png";
+import dentalpoint from "./assets/dentalpoint.png";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -78,12 +79,8 @@ export function Paralax() {
       {" "}
       <ParallaxText baseVelocity={-0.5}>
         <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
-        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
-        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
-        <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
-        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
-        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
+        <img style={{ width: "20vh", height: "20vh" }} src={psp} />
+        <img style={{ width: "40vh", height: "20vh" }} src={dentalpoint} />
         <img style={{ width: "40vh", height: "20vh" }} src={ads} />
       </ParallaxText>
     </section>
@@ -96,13 +93,9 @@ export function Paralaxen() {
       {" "}
       <ParallaxText baseVelocity={-0.5}>
         <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
-        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
-        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
-        <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
-        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
-        <img style={{ width: "40vh", height: "20vh" }} src={photo4} />
-        <img style={{ width: "40vh", height: "20vh" }} src={ads} />
+        <img style={{ width: "20vh", height: "20vh" }} src={psp} />
+        <img style={{ width: "40vh", height: "20vh" }} src={dentalpoint} />
+        <img style={{ width: "40vh", height: "20vh" }} src={adsen} />
       </ParallaxText>
     </section>
   );
