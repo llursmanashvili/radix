@@ -15,6 +15,10 @@ import adsen from "./assets/adsen.png";
 import psp from "./assets/psp.png";
 import gea from "./assets/gea.png";
 import dentalpoint from "./assets/dentalpoint.png";
+import albius from "./assets/albius.png";
+import women from "./assets/women.jpg";
+import gsa from "./assets/gsa.jpg";
+import gsp from "./assets/gsp.png";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -77,10 +81,14 @@ export function Paralax() {
   return (
     <section className="section">
       {" "}
-      <ParallaxText baseVelocity={-0.5}>
+      <ParallaxText baseVelocity={-0.8}>
         <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
         <img style={{ width: "20vh", height: "20vh" }} src={psp} />
         <img style={{ width: "40vh", height: "20vh" }} src={dentalpoint} />
+        <img style={{ width: "40vh", height: "20vh" }} src={albius} />
+        <img style={{ width: "40vh", height: "20vh" }} src={women} />
+        <img style={{ width: "40vh", height: "20vh" }} src={gsa} />
+        <img style={{ width: "40vh", height: "20vh" }} src={gsp} />
         <img style={{ width: "40vh", height: "20vh" }} src={ads} />
       </ParallaxText>
     </section>
@@ -91,10 +99,14 @@ export function Paralaxen() {
   return (
     <section className="section">
       {" "}
-      <ParallaxText baseVelocity={-0.5}>
+      <ParallaxText baseVelocity={-0.8}>
         <img style={{ width: "40vh", height: "20vh" }} src={gea} />{" "}
         <img style={{ width: "20vh", height: "20vh" }} src={psp} />
         <img style={{ width: "40vh", height: "20vh" }} src={dentalpoint} />
+        <img style={{ width: "40vh", height: "20vh" }} src={albius} />
+        <img style={{ width: "40vh", height: "20vh" }} src={women} />
+        <img style={{ width: "40vh", height: "20vh" }} src={gsa} />
+        <img style={{ width: "40vh", height: "20vh" }} src={gsp} />
         <img style={{ width: "40vh", height: "20vh" }} src={adsen} />
       </ParallaxText>
     </section>

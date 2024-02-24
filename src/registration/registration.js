@@ -33,12 +33,12 @@ export function Registration() {
       >
         <div className="regcard">
           <h4 className="early"> ადრეული რეგისტრაცია 15.03.24 ჩათვლით</h4>
-          <p> ექიმები-360GEL (5 კაციანი ჯგუფი - 290GEL)</p>{" "}
+          <p> ექიმები-360GEL (5 კაციან ჯგუფში 1 ექიმი- 290GEL)</p>{" "}
           <p> სტუდენტები-150GEL</p>
         </div>
         <div className="regcard">
           <h4 className="early"> დაგვიანებული რეგისტრაცია 15.04.24 ჩათვლით</h4>{" "}
-          <p>ექიმები-450GEL (5 კაციანი ჯგუფი - 390GEL) </p>{" "}
+          <p>ექიმები-450GEL (5 კაციან ჯგუფში 1 ექიმი - 390GEL) </p>{" "}
           <p>სტუდენტები-200GEL </p>{" "}
         </div>
         <div className="regcard">
@@ -57,7 +57,16 @@ export function Registration() {
             />
           </p>
           <p> ბენეფიციარი: სამეცნიერო-კვლევითი ცენტრი რადიქსი </p>{" "}
-          <p> დანიშნულებაში თქვენი სახელი და გვარი მიუთითეთ! </p>
+          <p
+            style={{
+              fontSize: "larger",
+              color: "red",
+              textDecoration: "underline",
+            }}
+          >
+            {" "}
+            დანიშნულებაში მიუთითეთ თქვენი სახელი და გვარი!{" "}
+          </p>
         </div>
 
         <p
