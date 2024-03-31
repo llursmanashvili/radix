@@ -34,8 +34,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height:auto;
-        margin-top: 26%;
+        height:100vh;
+        margin-top: 25%;
+        
 
     }
     .regcontainer{

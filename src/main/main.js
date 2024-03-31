@@ -19,6 +19,7 @@ import albius from "./assets/albius.png";
 import women from "./assets/women.jpg";
 import gsa from "./assets/gsa.jpg";
 import gsp from "./assets/gsp.png";
+import tepe from "./assets/tepe.png";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -89,6 +90,7 @@ export function Paralax() {
         <img style={{ width: "40vh", height: "20vh" }} src={women} />
         <img style={{ width: "40vh", height: "20vh" }} src={gsa} />
         <img style={{ width: "40vh", height: "20vh" }} src={gsp} />
+        <img style={{ width: "40vh", height: "20vh" }} src={tepe} />
         <img style={{ width: "40vh", height: "20vh" }} src={ads} />
       </ParallaxText>
     </section>
@@ -107,6 +109,7 @@ export function Paralaxen() {
         <img style={{ width: "40vh", height: "20vh" }} src={women} />
         <img style={{ width: "40vh", height: "20vh" }} src={gsa} />
         <img style={{ width: "40vh", height: "20vh" }} src={gsp} />
+        <img style={{ width: "40vh", height: "20vh" }} src={tepe} />
         <img style={{ width: "40vh", height: "20vh" }} src={adsen} />
       </ParallaxText>
     </section>
