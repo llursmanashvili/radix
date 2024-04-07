@@ -37,7 +37,7 @@ export function Registration() {
           <p> სტუდენტები-150GEL</p>
         </div>
         <div className="regcard">
-          <h4 className="early"> დაგვიანებული რეგისტრაცია 15.04.24 ჩათვლით</h4>{" "}
+          <h4 className="early"> დაგვიანებული რეგისტრაცია 10.05.24 ჩათვლით</h4>{" "}
           <p>ექიმები-450GEL (5 კაციან ჯგუფში 1 ექიმი - 390GEL) </p>{" "}
           <p>სტუდენტები-200GEL </p>{" "}
         </div>
@@ -129,7 +129,7 @@ export function Registrationen() {
           <p> Students-150 GEL</p>
         </div>
         <div className="regcard">
-          <h4 className="early">Late registration including 15.04.24</h4>{" "}
+          <h4 className="early">Late registration including 10.05.24</h4>{" "}
           <p>Doctors-450 GEL (group of 5 people - 390 GEL) </p>{" "}
           <p>Students-200 GEL </p>{" "}
         </div>
