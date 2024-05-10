@@ -22,6 +22,8 @@ import gsp from "./assets/gsp.png";
 import tepe from "./assets/tepe.png";
 import ciu from "./assets/ciu.jpg";
 import uni from "./assets/uni.png";
+import bio from "./assets/bio.png";
+import fagio from "./assets/fagio.jpg";
 
 function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
@@ -95,6 +97,8 @@ export function Paralax() {
         <img style={{ width: "28vh", height: "20vh" }} src={ciu} />
         <img style={{ width: "40vh", height: "20vh" }} src={tepe} />
         <img style={{ width: "20vh", height: "20vh" }} src={uni} />
+        <img style={{ width: "25vh", height: "20vh" }} src={bio} />
+        <img style={{ width: "30vh", height: "20vh" }} src={fagio} />
         <img style={{ width: "40vh", height: "20vh" }} src={ads} />
       </ParallaxText>
     </section>
@@ -115,7 +119,9 @@ export function Paralaxen() {
         <img style={{ width: "40vh", height: "20vh" }} src={gsp} />
         <img style={{ width: "28vh", height: "20vh" }} src={ciu} />
         <img style={{ width: "40vh", height: "20vh" }} src={tepe} />
-        <img style={{ width: "40vh", height: "20vh" }} src={uni} />
+        <img style={{ width: "20vh", height: "20vh" }} src={uni} />
+        <img style={{ width: "25vh", height: "20vh" }} src={bio} />
+        <img style={{ width: "30vh", height: "20vh" }} src={fagio} />
         <img style={{ width: "40vh", height: "20vh" }} src={adsen} />
       </ParallaxText>
     </section>
